@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katalog Produk - Sanseveria Store</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="index.html" class="logo">Premium<span>Sanseveria</span></a>
+  <button id="cartBtn" class="cart-icon">🛒 <span id="cartCount">0</span></button>
+</header>
+
+<section class="catalog-hero">
+  <h1>Katalog Sanseveria</h1>
+  <p>Pilih tanaman favoritmu, masukkan ke keranjang, lalu lanjut pesan via WhatsApp.</p>
+</section>
+
+<section class="section">
+  <div id="productList" class="product-grid">
+
+    <div class="product-card">
+      <img src="assets/placeholder.jpg" alt="Sanseveria Mini">
+      <div class="product-content">
+        <h3>Sanseveria Mini</h3>
+        <p>Tanaman hias kecil yang cocok untuk meja kerja dan dekorasi ruangan.</p>
+        <div class="price-row">
+          <strong>Rp 35.000</strong>
+          <span>Diskon 10%</span>
+        </div>
+        <button onclick="addToCart('Sanseveria Mini')">Tambahkan ke Keranjang</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="assets/placeholder.jpg" alt="Sanseveria Golden">
+      <div class="product-content">
+        <h3>Sanseveria Golden</h3>
+        <p>Daun cantik dengan warna hijau kuning, cocok untuk dekorasi rumah.</p>
+        <div class="price-row">
+          <strong>Rp 55.000</strong>
+          <span>Diskon 5%</span>
+        </div>
+        <button onclick="addToCart('Sanseveria Golden')">Tambahkan ke Keranjang</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div id="cartModal" class="cart-modal">
+  <div class="cart-box">
+    <h2>Keranjang Pesanan</h2>
+    <div id="cartItems"></div>
+
+    <button id="checkoutBtn" class="checkout-btn">Lanjut Pesan</button>
+    <button id="closeCart" class="close-cart">Tutup</button>
+  </div>
+</div>
+
+<script type="module" src="js/katalog.js"></script>
+</body>
+</html>
